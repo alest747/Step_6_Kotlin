@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="ООО Диванные войска"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <EditText
+        android:id="@+id/edTextName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:hint="Имя"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/edTextLastName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Фамилия"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/edTextName"
+        app:layout_constraintStart_toStartOf="@+id/edTextName"
+        app:layout_constraintTop_toBottomOf="@+id/edTextName" />
+
+    <EditText
+        android:id="@+id/edTextSurName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Отчество"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/edTextLastName"
+        app:layout_constraintStart_toStartOf="@+id/edTextLastName"
+        app:layout_constraintTop_toBottomOf="@+id/edTextLastName" />
+
+    <EditText
+        android:id="@+id/edTextAge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Возраст"
+        android:inputType="numberSigned"
+        app:layout_constraintEnd_toEndOf="@+id/edTextSurName"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/edTextSurName"
+        app:layout_constraintTop_toBottomOf="@+id/edTextSurName" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="161dp"
+        android:layout_height="161dp"
+        android:layout_marginStart="139dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="140dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.482"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/divan" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Введите данные для вступления в наши ряды"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/teal_700"
+        android:onClick="onClickTrue"
+        android:text="Пополнить ряды"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/edTextAge"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/edTextAge"
+        app:layout_constraintTop_toBottomOf="@+id/edTextAge" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/teal_700"
+        android:drawableLeft="@drawable/img"
+        android:onClick="onClickFalse"
+        android:text="Отказаться"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/button3"
+        app:layout_constraintStart_toStartOf="@+id/button3"
+        app:layout_constraintTop_toBottomOf="@+id/button3" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
