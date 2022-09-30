@@ -33,7 +33,7 @@ class MainActivity : AppCompatActivity(){
         when{
             edText > "" && edText2 > "" && edText3 > "" -> startActivity(intent) //когда все нужные поля для ввода текста заполнены срабатывает startActivity(intent) - переход на другое активити
 
-            else ->{Toast.makeText(this,"Ведите все необходимые данные",Toast.LENGTH_SHORT).show()}  //если хотя бы одно поле для ввода текста пустое то выводится всплывающее сообщение Toast
+            else ->{Toast.makeText(this,"Введите все необходимые данные",Toast.LENGTH_SHORT).show()}  //если хотя бы одно поле для ввода текста пустое то выводится всплывающее сообщение Toast
         }
     }
 }
